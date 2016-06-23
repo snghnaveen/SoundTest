@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sound Test</string>
+    <string name="help">
+        This app will determine your left, right and center channel.
+        Plug your earphones and press the speaker icons. If your phone has stereo loud speakers like Moto G 2nd Gen, HTC M9 have,
+         app will work perfectly fine however if it has only single loud speaker like Moto G 1st Gen , Samsung Galaxy S4 has , sorry
+        you will listen same sound without any changes.
+
+   </string>
+</resources>
