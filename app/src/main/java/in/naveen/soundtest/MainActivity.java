@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+//code to change change system volume
 
         volumeSeekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -70,21 +70,21 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+//play left channel
         l.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mL.start();
             }
         });
-
+//play center channel
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mC.start();
             }
         });
-
+//play right channel
         r.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+//code to create menu item
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_res, menu);
@@ -107,9 +107,13 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+
+            //exit the app
             case R.id.exit:
                 this.finish();
                 return true;
+
+            //about the app
             case R.id.about:
                 new AlertDialog.Builder(MainActivity.this)
 
@@ -127,6 +131,8 @@ public class MainActivity extends AppCompatActivity {
                         .show();
 
                 return true;
+
+            //help code
             case R.id.help:
 
 
